@@ -12,7 +12,7 @@ The data I will need in order to answer this question will be the customers tabl
 ![Logic Diagram](logic_diagram.png)
 
 ### Bringing the Data together
-The two external reports [Services.csv](Services.csv) and [Survey_Responses.csv](Survey_Responses.csv) (found in this report directory) represent additional data to expand upon the data already available in the [postgres database:](churn.sql) churn.sql. In order to make them more useful we will realize the logical diagram above and bring the csv tables (with some slight transformations) into the postgres database. First we will create a new table for each dataset and link those tables to the customers table, then we will load the data from the csvs into the tables we created for an initial load.
+The two external reports [Services.csv](Services.csv) and [Survey_Responses.csv](Survey_Responses.csv) (found in this report directory) represent additional data to expand upon the data already available in the [postgres database:](churn.sql). In order to make them more useful we will realize the logical diagram above and bring the csv tables (with some slight transformations) into the postgres database. First we will create a new table for each dataset and link those tables to the customers table, then we will load the data from the csvs into the tables we created for an initial load.
 
 ### Create tables:
 #### Services Table
